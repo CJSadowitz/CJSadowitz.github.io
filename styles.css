@@ -1,0 +1,80 @@
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: hsl(0, 10%, 30%);
+	width: auto;
+}
+li
+{
+	float: left;
+}
+li a, .dropbtn
+{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn
+{
+	background-color: hsl(0, 10%, 50%);
+}
+li .dropdown
+{
+	display: inline-block;
+}
+.dropdown-content
+{
+	display: none;
+	position: absolute;
+	background-color: hsl(0, 10%, 25%)
+	min-width: 160px;
+	margin: auto;
+	z-index: 1;
+}
+.dropdown-content a
+{
+	color: white;
+	margin: 1%;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover
+{
+	background-color: hsl(0, 10%, 25%);
+}
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+body
+{
+	background-color: hsl(0, 10%, 20%);
+}
+.home_title
+{
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
+footer
+{
+	color: white;
+	background-color: hsl(0, 5%, 15%);
+	height: 10%;
+	margin: auto;
+	padding: 1% 2%;
+	display: block;
+	
+}
+.portfolio
+{
+	color: white;
+	padding: 1%;
+	margin: 2%;
+}
