@@ -14,8 +14,6 @@
             Easy; simple checklist
             Time; start and end times of activity
         Every instance where the task is more complicated. User will interact with new page to get more specifics and return to this one for checkbox
-        AIzaSyAYaswN7uL5LexgnwXo_WxsBROdl_IZarE funny google sheets api key
-        task-logger@tasks-db-458515.iam.gserviceaccount.com funny user account
     -->
         <h1>Daily Tasks</h1>
         <div class="container">
@@ -27,7 +25,11 @@
                 </div>
                 <div class="task">
                     <input type="checkbox" id="clean room" onclick="handle_simple_checklist(this)">
-                    <label for="creatine">Cleaned Room</label></br>
+                    <label for="clean room">Cleaned Room</label></br>
+                </div>
+                <div class="task">
+                    <input type="checkbox" id="instagram post" onclick="handle_simple_checklist(this)">
+                    <label for="instagram post">Instagram Post</label></br>
                 </div>
             </form>
             <form id="complex_checklist" class="column">
@@ -43,6 +45,10 @@
                 <div class="task">
                     <input id="meditation" type="checkbox" onclick="handle_simple_checklist(this)">
                     <label for="meditation">Meditation</label></br>
+                </div>
+                <div class="task">
+                    <input id="journaling" type="checkbox" onclick="handle_simple_checklist(this)">
+                    <label for="journaling">Journaling</label></br>
                 </div>
             </form>
         </div>
