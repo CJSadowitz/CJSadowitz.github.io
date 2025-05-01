@@ -38,7 +38,7 @@ async function task_enabling() {
     for (task in completed_tasks) {
         for (let i = 0; i < all_tasks.length; i++) {
             if (all_tasks[i].id == completed_tasks[task]) {
-                all_tasks[i].remove(i);
+                all_tasks[i].remove();
             }
         }
     }
