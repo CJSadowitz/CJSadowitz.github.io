@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daily Task List</title>
+        <link rel="stylesheet" href="daily_tasks_styles.css">
+        <script src="checklist.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <!--
+        All Listed Daily tasks are not work related and are more to build habit and be natural regardless of when in my life I am doing it
+
+        A couple of different daily tasks:
+            Easy; simple checklist
+            Time; start and end times of activity
+        Every instance where the task is more complicated. User will interact with new page to get more specifics and return to this one for checkbox
+        AIzaSyAYaswN7uL5LexgnwXo_WxsBROdl_IZarE funny google sheets api key
+        task-logger@tasks-db-458515.iam.gserviceaccount.com funny user account
+    -->
+        <h1>Daily Tasks</h1>
+        <div class="container">
+            <form id="simple_checklist" class="column">
+                <h3>Simple</h3>
+                <div class="task">
+                    <input type="checkbox" id="creatine" onclick="handle_simple_checklist(this)">
+                    <label for="creatine">Took Creatine</label></br>
+                </div>
+            </form>
+            <form id="complex_checklist" class="column">
+                <h3>Complex</h3>
+                <div class="task">
+                    <input id="ab_workout" type="checkbox" onclick="handle_complex_checklist(this)">
+                    <label for="ab_workout">Ab Workout</label></br>
+                </div>
+                <div class="task">
+                    <input id="drawing" type="checkbox" onclick="handle_complex_checklist(this)">
+                    <label for="drawing">Draw</label></br>
+                </div>
+                <div class="task">
+                    <input id="meditation" type="checkbox" onclick="handle_complex_checklist(this)">
+                    <label for="meditation">Meditation</label></br>
+                </div>
+            </form>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>

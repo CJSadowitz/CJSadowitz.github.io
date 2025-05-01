@@ -31,7 +31,7 @@ li .dropdown
 {
 	display: none;
 	position: absolute;
-	background-color: hsl(0, 10%, 25%)
+	background-color: hsl(0, 10%, 25%);
 	min-width: 160px;
 	margin: auto;
 	z-index: 1;
