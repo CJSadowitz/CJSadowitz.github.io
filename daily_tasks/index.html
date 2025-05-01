@@ -23,7 +23,7 @@
                 <h3>Simple</h3>
                 <div class="task">
                     <input type="checkbox" id="creatine" onclick="handle_simple_checklist(this)">
-                    <label for="creatine">Took Creatine</label></br>
+                    <label for="creatine">Take Creatine</label></br>
                 </div>
                 <div class="task">
                     <input type="checkbox" id="clean room" onclick="handle_simple_checklist(this)">
@@ -48,6 +48,14 @@
         </div>
     </body>
     <footer>
-        <script>task_enabling()</script>
+        <script>
+        task_enabling()
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("input[type='checkbox']").forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        });
+
+        </script>
     </footer>
 </html>

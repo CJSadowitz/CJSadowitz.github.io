@@ -1,6 +1,7 @@
 function handle_simple_checklist(checkbox) {
     if (checkbox.checked) {
         update_task_log(checkbox.id)
+        checkbox.disabled = true;
     }
 }
 
