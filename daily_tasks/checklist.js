@@ -47,7 +47,7 @@ async function task_enabling() {
 }
 
 async function get_data() {
-    const url="https://script.google.com/macros/s/AKfycbx1uSn7CirwNZV6CgqQTqJbazQF7YuNTo4zoh-QF3EpeOFv9GxeL8K8KslTnr8akaOvkA/exec?type=get_full_sheet"
+    const url="https://script.google.com/macros/s/AKfycbx1uSn7CirwNZV6CgqQTqJbazQF7YuNTo4zoh-QF3EpeOFv9GxeL8K8KslTnr8akaOvkA/exec?type=get_full_task_sheet"
 
     try {
         const response = await fetch(url, {
@@ -69,7 +69,7 @@ async function update_task_log(task_name) {
     const now = new Date();
     const date = String(now.getUTCFullYear()) + "/" + String(now.getUTCMonth() + 1) + "/" + String(now.getUTCDate());
     const start = String(now.getHours()) + ":" + String(now.getMinutes());
-    var url = "https://script.google.com/macros/s/AKfycbx1uSn7CirwNZV6CgqQTqJbazQF7YuNTo4zoh-QF3EpeOFv9GxeL8K8KslTnr8akaOvkA/exec?type=post";
+    var url = "https://script.google.com/macros/s/AKfycbx1uSn7CirwNZV6CgqQTqJbazQF7YuNTo4zoh-QF3EpeOFv9GxeL8K8KslTnr8akaOvkA/exec?type=update_task_log";
     url += "&date=" + String(date);
     url += "&task=" + task_name;
     url += "&start=" + start;

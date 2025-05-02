@@ -28,7 +28,12 @@
         </form>
         <form class="preset_food_search">
             <h3>Preset Food Item</h3>
-            <input type="text" id="userInput" onkeyup="show_suggestions()" placeholder="Prest Food Item" required="true">
+            <script>
+                // Awful
+                var sug = new Suggestions();
+                sug.init();
+            </script>
+            <input type="text" id="userInput" onkeyup="sug.show_suggestions()" placeholder="Prest Food Item" required="true">
             <div id="suggestions" style="border: 1px solid #ccc; display: none;"></div>
         </form id="preset food item">
         <!-- Add food item to database -->
@@ -42,6 +47,5 @@
         </form>
     </body>
     <footer>
-
     </footer>
 </html>
