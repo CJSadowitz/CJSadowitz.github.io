@@ -14,22 +14,23 @@
 		</ul>
         <div class="counts">
             <p>Calories Left: </p><p id="daily_calorie_count">3000</p></br>
-            <p>Protien Left: </p><p  id="daily_protien_count">183</p></br>
-            <p>Carbs Left: </p><p    id="daily_carb_count">400</p></br>
-            <p>Fats Left: </p><p     id="daily_fat_count">85</p></br>
+            <p>Protein Left: </p><p  id="daily_protein_count">183</p></br>
+            <p>Carbs Left: </p><p    id="daily_carbs_count">400</p></br>
+            <p>Fats Left: </p><p     id="daily_fats_count">85</p></br>
         </div>
         <form id="custom food item" class="custom_food_item">
             <h3>Custom Food Item</h3>
             <input type="text" id="custom_food_name"     placeholder="Food Name" required="true">
             <input type="text" id="custom_calorie_count" placeholder="Calorie Count" required="true">
-            <input type="text" id="custom_protien"       placeholder="Protien Count" required="true">
+            <input type="text" id="custom_protein"       placeholder="Protein Count" required="true">
             <input type="text" id="custom_carbs_count"   placeholder="Carbs Count" required="true">
-            <input type="text" id="custom_fat_count"     placeholder="Fat Count" required="true">
+            <input type="text" id="custom_fats_count"     placeholder="Fat Count" required="true">
         </form>
         <form class="preset_food_search">
             <h3>Preset Food Item</h3>
             <script>
                 // Awful
+                update_counts();
                 var sug = new Suggestions();
                 sug.init();
             </script>
@@ -41,7 +42,7 @@
             <h3>Add Item Into Presets</h3>
             <input type="text" id="custom_food_name"     placeholder="Food Name" required="true">
             <input type="text" id="custom_calorie_count" placeholder="Calorie Count" required="true">
-            <input type="text" id="custom_protien"       placeholder="Protien Count" required="true">
+            <input type="text" id="custom_protein"       placeholder="Protein Count" required="true">
             <input type="text" id="custom_carbs_count"   placeholder="Carbs Count" required="true">
             <input type="text" id="custom_fat_count"     placeholder="Fat Count" required="true">
         </form>
