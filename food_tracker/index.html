@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="food_tracker_styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="presets.js"></script>
+    </head>
+    <body>
+        <h1>Food Tracker</h1>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+			<li><a href="index.html">Food Tracker</a></li>
+			<li><a href="../daily_tasks/index.html">Daily Tasks</a></li>
+		</ul>
+        <div class="counts">
+            <p>Calories Left: </p><p id="daily_calorie_count">3000</p></br>
+            <p>Protien Left: </p><p  id="daily_protien_count">183</p></br>
+            <p>Carbs Left: </p><p    id="daily_carb_count">400</p></br>
+            <p>Fats Left: </p><p     id="daily_fat_count">85</p></br>
+        </div>
+        <form id="custom food item" class="custom_food_item">
+            <h3>Custom Food Item</h3>
+            <input type="text" id="custom_food_name"     placeholder="Food Name" required="true">
+            <input type="text" id="custom_calorie_count" placeholder="Calorie Count" required="true">
+            <input type="text" id="custom_protien"       placeholder="Protien Count" required="true">
+            <input type="text" id="custom_carbs_count"   placeholder="Carbs Count" required="true">
+            <input type="text" id="custom_fat_count"     placeholder="Fat Count" required="true">
+        </form>
+        <form class="preset_food_search">
+            <h3>Preset Food Item</h3>
+            <input type="text" id="userInput" onkeyup="show_suggestions()" placeholder="Prest Food Item" required="true">
+            <div id="suggestions" style="border: 1px solid #ccc; display: none;"></div>
+        </form id="preset food item">
+        <!-- Add food item to database -->
+        <form class="add_item_to_db">
+            <h3>Add Item Into Presets</h3>
+            <input type="text" id="custom_food_name"     placeholder="Food Name" required="true">
+            <input type="text" id="custom_calorie_count" placeholder="Calorie Count" required="true">
+            <input type="text" id="custom_protien"       placeholder="Protien Count" required="true">
+            <input type="text" id="custom_carbs_count"   placeholder="Carbs Count" required="true">
+            <input type="text" id="custom_fat_count"     placeholder="Fat Count" required="true">
+        </form>
+    </body>
+    <footer>
+
+    </footer>
+</html>

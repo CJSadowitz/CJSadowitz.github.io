@@ -1,0 +1,79 @@
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 2vw;
+	overflow: hidden;
+	width: auto;
+}
+li
+{
+	float: left;
+    padding: 3vw;
+    border-style: solid;
+    border-width: 1vw;
+    border-radius: 3vw;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+body
+{
+    background-color: white;
+    margin: 0;
+    padding-left: 5vw;
+}
+h1
+{
+    text-align: center;
+}
+h3
+{
+    text-align: center;
+}
+.custom_food_item
+{
+    border-style: solid;
+    text-align: center;
+    border-width: 1vw;
+    border-radius: 3vw;
+    padding: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
+p
+{
+    display: inline;
+}
+.counts
+{
+    text-align: center;
+    margin-right: 5vw;
+    border-style: solid;
+    border-width: 1vw;
+    border-radius: 3vw;
+    margin-bottom: 5vw;
+}
+.preset_food_search
+{
+    text-align: center;
+    margin-right: 5vw;
+    margin-bottom: 5wv;
+    border-style: solid;
+    border-width: 1vw;
+    border-radius: 3vw;
+    padding: 5vw;
+}
+.add_item_to_db
+{
+    border-style: solid;
+    text-align: center;
+    border-width: 1vw;
+    border-radius: 3vw;
+    margin-top: 5vw;
+    padding: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
