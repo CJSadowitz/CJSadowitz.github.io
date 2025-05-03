@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="presets.js"></script>
         <script src="upload.js"></script>
+        <script src="set_colors.js"></script>
     </head>
     <body>
         <h1>Food Tracker</h1>
@@ -14,14 +15,14 @@
 			<li><a href="index.html">Food Tracker</a></li>
 			<li><a href="../daily_tasks/index.html">Daily Tasks</a></li>
 		</ul>
-        <div class="counts">
+        <div id="counts" class="counts">
             <!-- Change this to dynamic from the db -->
             <p>Calories Left: </p><p id="daily_calorie_count">3000</p></br>
             <p>Protein Left: </p><p  id="daily_protein_count">183</p></br>
             <p>Carbs Left: </p><p    id="daily_carbs_count">400</p></br>
             <p>Fats Left: </p><p     id="daily_fats_count">85</p></br>
         </div>
-        <form id="custom food item" class="custom_food_item" onsubmit="return false">
+        <form id="custom_food_item" class="custom_food_item" onsubmit="return false">
             <h3>Custom Food Item</h3>
             <input type="text" id="custom_food_name"     placeholder="Food Name" required="true">
             <input type="text" id="custom_calorie_count" placeholder="Calorie Count" required="true">
@@ -30,13 +31,13 @@
             <input type="text" id="custom_fats_count"    placeholder="Fat Count" required="true">
             </br><input type="submit" value="Upload">
         </form>
-        <form class="preset_food_search" onsubmit="return false;">
+        <form id="preset_food_search" class="preset_food_search" onsubmit="return false;">
             <h3>Preset Food Item</h3>
             <input type="text" id="userInput" onkeyup="sug.show_suggestions()" placeholder="Prest Food Item" required="true">
             <div id="suggestions" style="border: 1px solid #ccc; display: none;"></div>
             </br><input type="submit" value="Upload">
         </form id="preset food item">
-        <form class="add_item_to_db" onsubmit="add_preset(event)">
+        <form id="add_item_to_db" class="add_item_to_db" onsubmit="add_preset(event)">
             <h3>Add Item Into Presets</h3>
             <input type="text" id="custom_food_name"     placeholder="Food Name" required="true">
             <input type="text" id="custom_calorie_count" placeholder="Calorie Count" required="true">
@@ -48,9 +49,9 @@
     </body>
     <footer>
         <script>
-            var custom_food_submission = document.getElementById("custom food item");
+            var custom_food_submission = document.getElementById("custom_food_item");
             custom_food_submission.addEventListener("submit", () => upload_custom(event));
-
+            set_page_colors();
             update_counts();
             var sug = new Suggestions();
             sug.init();
