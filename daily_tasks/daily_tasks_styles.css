@@ -11,6 +11,7 @@ body
     width: 90vw;
     gap: 2vw;
     flex-direction: column;
+    margin-bottom: 5vw;
 }
 .column
 {
@@ -34,12 +35,14 @@ h3
     border-width: 1vw;
     border-radius: 3vw;
     padding: 5%;
+    margin-bottom: 2vw;
 }
 ul
 {
+    font-size: 4vw;
 	list-style-type: none;
 	margin: 0;
-	padding: 2vw;
+	padding: 1vw;
 	overflow: hidden;
 	width: auto;
 }

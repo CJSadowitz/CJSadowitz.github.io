@@ -1,8 +1,9 @@
 ul
 {
+    font-size: 4vw;
 	list-style-type: none;
 	margin: 0;
-	padding: 2vw;
+	padding: 1vw;
 	overflow: hidden;
 	width: auto;
 }
