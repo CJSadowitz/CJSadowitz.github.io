@@ -4,6 +4,7 @@
         <title>Daily Exercise</title>
         <link rel="stylesheet" href="daily_exercise.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="upload_task.js"></script>
     </head>
     <body>
         <h1>Daily Exercise</h1>
@@ -18,27 +19,27 @@
             <form id="stretches" class="column">
                 <h3>Stretches</h3>
                 <div class="task">
-                    <input type="checkbox" id="chicken_wing" onclick="">
+                    <input type="checkbox" id="chicken_wing" onclick="update_exercise_stretch(this)">
                     <label for="chicken_wing">Chicken Wing Stretch</label></br>
                 </div>
                 <div class="task">
-                    <input type="checkbox" id="lat_opener" onclick="">
+                    <input type="checkbox" id="lat_opener" onclick="update_exercise_stretch(this)">
                     <label for="lat_opener">Lat Opener</label></br>
                 </div>
                 <div class="task">
-                    <input type="checkbox" id="wrists" onclick="">
+                    <input type="checkbox" id="wrists" onclick="update_exercise_stretch(this)">
                     <label for="wrists">Wrists (4x)</label></br>
                 </div>
                 <div class="task">
-                    <input type="checkbox" id="shoulder_dislocates" onclick="">
+                    <input type="checkbox" id="shoulder_dislocates" onclick="update_exercise_stretch(this)">
                     <label for="shoulder_dislocates">Shoulder Dislocates</label></br>
                 </div>
                 <div class="task">
-                    <input type="checkbox" id="standing_hamstring" onclick="">
+                    <input type="checkbox" id="standing_hamstring" onclick="update_exercise_stretch(this)">
                     <label for="standing_hamstring">Standing Hamstring Stretch</label></br>
                 </div>
                 <div class="task">
-                    <input type="checkbox" id="butterfly" onclick="">
+                    <input type="checkbox" id="butterfly" onclick="update_exercise_stretch(this)">
                     <label for="butterfly">Butterfly Stretch</label></br>
                 </div>
             </form>
@@ -46,37 +47,37 @@
             <form id="exercises" class="column">
                 <h3>Exercises</h3>
                 <div class="task">
-                    <input id="pushups" type="checkbox" onclick="">
+                    <input id="pushups" type="checkbox" onclick="update_exercise_stretch(this)">
                     <label for="pushups">Pushups</label></br>
                 </div>
                 <div class="task">
-                    <input id="dips" type="checkbox" onclick="">
+                    <input id="dips" type="checkbox" onclick="update_exercise_stretch(this)">
                     <label for="dips">Dips</label></br>
                 </div>
                 <div class="task">
-                    <input id="pullups" type="checkbox" onclick="">
+                    <input id="pullups" type="checkbox" onclick="update_exercise_stretch(this)">
                     <label for="pullups">Pullups</label></br>
                 </div>
                 <div class="task">
-                    <input id="l_sit" type="checkbox" onclick="">
+                    <input id="l_sit" type="checkbox" onclick="update_exercise_stretch(this)">
                     <label for="l_sit">L Sit</label></br>
                 </div>
                 <div class="task">
-                    <input id="seated_pike_lifts" type="checkbox" onclick="">
+                    <input id="seated_pike_lifts" type="checkbox" onclick="update_exercise_stretch(this)">
                     <label for="seated_pike_lifts">Seated Pike Lifts</label></br>
                 </div>
                 <div class="task">
-                    <input id="hallow_body_holds" type="checkbox" onclick="">
+                    <input id="hallow_body_holds" type="checkbox" onclick="update_exercise_stretch(this)">
                     <label for="hallow_body_holds">Hallow Body Hold</label></br>
                 </div>
                 <div class="task">
-                    <input id="crunches" type="checkbox" onclick="">
+                    <input id="crunches" type="checkbox" onclick="update_exercise_stretch(this)">
                     <label for="crunches">Crunches</label></br>
                 </div>
             </form>
         </div>
     </body>
     <footer>
-
+        <script>task_enabling();</script>
     </footer>
 </html>
