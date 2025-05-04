@@ -25,7 +25,7 @@ async function task_enabling() {
     const data = await get_data();
     var list = data.data.flat().slice(4);
     const now = new Date();
-    const date = String(now.getUTCFullYear()) + "-" + String(now.getUTCMonth() + 1).padStart(2, '0') + "-" + String(now.getUTCDate()).padStart(2, '0');
+    const date = String(now.getFullYear()) + "-" + String(now.getMonth() + 1).padStart(2, '0') + "-" + String(now.getDate()).padStart(2, '0');
 
     var completed_tasks = []
 
@@ -67,7 +67,7 @@ async function get_data() {
 async function update_task_log(task_name) {
     
     const now = new Date();
-    const date = String(now.getUTCFullYear()) + "/" + String(now.getUTCMonth() + 1) + "/" + String(now.getUTCDate());
+    const date = String(now.getFullYear()) + "/" + String(now.getMonth() + 1) + "/" + String(now.getDate());
     const start = String(now.getHours()) + ":" + String(now.getMinutes());
     var url = "https://script.google.com/macros/s/AKfycbx1uSn7CirwNZV6CgqQTqJbazQF7YuNTo4zoh-QF3EpeOFv9GxeL8K8KslTnr8akaOvkA/exec?type=update_task_log";
     url += "&date=" + String(date);

@@ -12,7 +12,7 @@ async function update_counts() {
     const sheet = await get_food_sheet();
     var list = sheet.data.slice(1);
     const now = new Date();
-    const date = String(now.getUTCFullYear()) + "-" + String(now.getUTCMonth() + 1).padStart(2, '0') + "-" + String(now.getUTCDate()).padStart(2, '0');
+    const date = String(now.getFullYear()) + "-" + String(now.getMonth() + 1).padStart(2, '0') + "-" + String(now.getDate()).padStart(2, '0');
     var name = [];
     var calorie_count = document.getElementById("daily_calorie_count");
     var protein_count = document.getElementById("daily_protein_count");

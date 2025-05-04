@@ -12,7 +12,7 @@ async function upload_custom(event) {
 
 
     const now = new Date();
-    const date = String(now.getUTCFullYear()) + "/" + String(now.getUTCMonth() + 1) + "/" + String(now.getUTCDate());
+    const date = String(now.getFullYear()) + "/" + String(now.getMonth() + 1) + "/" + String(now.getDate());
     var url = "https://script.google.com/macros/s/AKfycbx1uSn7CirwNZV6CgqQTqJbazQF7YuNTo4zoh-QF3EpeOFv9GxeL8K8KslTnr8akaOvkA/exec?type=update_food_log";
     url += "&date=" + String(date);
     url += "&name=" + food_name;

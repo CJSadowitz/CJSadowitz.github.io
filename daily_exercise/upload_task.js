@@ -4,7 +4,7 @@ async function update_exercise_stretch(element) {
     var type = form.id;
     var task_name = element.id;
     const now = new Date();
-    const date = String(now.getUTCFullYear()) + "/" + String(now.getUTCMonth() + 1) + "/" + String(now.getUTCDate());
+    const date = String(now.getFullYear()) + "/" + String(now.getMonth() + 1) + "/" + String(now.getDate());
     const time = String(now.getHours()) + ":" + String(now.getMinutes()).padStart(2, '0');
     var url = "https://script.google.com/macros/s/AKfycbx1uSn7CirwNZV6CgqQTqJbazQF7YuNTo4zoh-QF3EpeOFv9GxeL8K8KslTnr8akaOvkA/exec?type=update_exercise_stretch";
     url += "&date=" + String(date);
@@ -58,7 +58,7 @@ async function task_enabling() {
     const data = await get_data();
     var list = data.data.flat().slice(4);
     const now = new Date();
-    const date = String(now.getUTCFullYear()) + "-" + String(now.getUTCMonth() + 1).padStart(2, '0') + "-" + String(now.getUTCDate()).padStart(2, '0');
+    const date = String(now.getFullYear()) + "-" + String(now.getMonth() + 1).padStart(2, '0') + "-" + String(now.getDate()).padStart(2, '0');
 
     var completed_tasks = []
 
@@ -72,6 +72,7 @@ async function task_enabling() {
     for (task in completed_tasks) {
         for (let i = 0; i < all_tasks.length; i++) {
             if (all_tasks[i].id == completed_tasks[task]) {
+                console.log(all_tasks[i].id);
                 all_tasks[i].remove();
             }
         }
